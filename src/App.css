@@ -1,0 +1,35 @@
+.App {
+  text-align: center;
+
+}
+.wrapper{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+   background-color:rgb(224, 228, 233); 
+   justify-content: center;
+   align-items: center;
+}
+.flag{
+  width: 100%;
+ min-height: 200px;
+}
+.card-container{
+ 
+ border-bottom-right-radius: 20px;
+border-bottom-left-radius: 20px;
+background-color: white;
+  width: 20%;
+  min-height:350px ;
+  margin: 50px 10px 0 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper{
+    flex-direction: column;
+  }
+.card-container{
+  width: 80%;
+}
+  
+}
