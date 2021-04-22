@@ -8,13 +8,13 @@ const ShowCountries = (props) =>{
    }
     return(
     <div className="wrapper">
-{props.results.map(item =>{
+{props.results.map((item,index) =>{
     const {name,population,capital,flag}=item;
     return(
 
      <div className="card-container">
-     <img className="flag" src={flag}/>
-     <p>{name}</p> 
+     <img alt="flag" className="flag" src={flag}/>
+     <p key={index}>{name}</p> 
      <p>{numberWithCommas(population)}</p> 
      <p>{capital}</p>  
      </div>   
