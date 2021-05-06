@@ -1,6 +1,18 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .App {
   text-align: center;
 
+}
+.logo{
+  padding-left: 30px;
+}
+.logo-dark{
+color:white;
+ padding-left: 30px;
 }
 .wrapper{
   width: 100%;
@@ -9,6 +21,24 @@
    background-color:rgb(224, 228, 233); 
    justify-content: center;
    align-items: center;
+
+}
+
+.light-dark{
+  margin-right: 10px;
+  color:yellow;
+}
+.light{
+  margin-right: 10px;
+}
+.wrapper-dark{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+   background-color:rgb(27, 40, 56); 
+   justify-content: center;
+   align-items: center;
+
 }
 .flag{
   width: 100%;
@@ -22,7 +52,147 @@ background-color: white;
   width: 20%;
   min-height:350px ;
   margin: 50px 10px 0 10px;
+  text-decoration: none;
 }
+
+.header{
+  background-color: rgb(216, 213, 213);
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0 40px 0;
+  
+
+}
+
+.header-dark{
+  background-color: rgb(216, 213, 213);
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0 40px 0;
+  background-color:rgb(27, 40, 56); 
+
+}
+
+
+.searchWrapper{
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0 40px 0;
+  
+}
+
+.searchCountries{
+  width: 40%;
+}
+.searchCountries input{
+  padding: 20px;
+  width:80%;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  background-color: lightgray;
+}
+.searchRegion{
+width: 40%;
+}
+
+
+.searchRegion select{
+padding: 20px;
+width:80%;
+border-radius: 10px;
+outline: none;
+border: none;
+background-color: lightgray;
+}
+
+
+
+/* Countries Details */
+.countryContainer{
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 30px;
+  
+}
+.flagImage{
+  width: 35%;
+}
+.countriesDetails{
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+ 
+}
+.InfoColumnWrapper{
+  
+  display: flex;
+  padding-left: 30px;
+}
+.countryName{
+  padding: 0 0 30px 30px;
+}
+.firstInfoColumn{
+ flex: 2;
+}
+.soundInfoColumn{
+  flex: 2;
+
+}
+
+.borderCountriesContainer{
+  display: flex;
+  padding: 20px 0 20px 220px;
+  justify-content:center;
+}
+.borderFirstColumn{
+  padding-right:10px ;
+}
+.borderLinks{
+padding: 8px;
+background-color: rgb(227, 231, 231);
+margin-left: 3px;  
+border-radius: 10px;
+text-decoration: none;
+}
+
+.bntBack{
+  text-decoration: none;
+  background-color: rgb(241, 241, 241);
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.backButtonHolder{
+  padding-left: 200px;
+}
+.mainContainer{
+  padding-top: 40px;
+}
+.darkmode{
+background-color: rgb(37, 37, 61);
+}
+.header-darkmode{
+  background-color: rgb(37, 37, 61);
+}
+
+.toggle{
+  padding-right: 30px;
+  display: flex;
+  align-items: center;
+}
+.toggle button{
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 5px;
+  border: none;
+  outline: none;
+}
+
 
 @media screen and (max-width: 600px) {
   .wrapper{
